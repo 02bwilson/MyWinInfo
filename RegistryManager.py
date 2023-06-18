@@ -5,6 +5,14 @@ class RegMan:
     _VERSION = "1.0"
 
     def __init__(self):
+        """
+        The __init__ function is called when the class is instantiated.
+        It sets up the instance variables for this particular object.
+
+
+        :param self: Represent the instance of the class
+        :return: The instance of the class
+        """
         self.regAccess = None
         self.accessKey = None
 
