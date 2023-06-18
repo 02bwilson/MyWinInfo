@@ -47,11 +47,10 @@ class MWIWidget(QWidget):
         :param self: Refer to the object itself
         """
         self.titleLabel = QLabel()
-        self.titleLabel.setStyleSheet("font-size:24pt;")
+        self.titleLabel.setStyleSheet("font-size:24pt;border: 2px solid white")
         self.titleLabel.setText("MyWinInfo v" + self.parent._VERSION)
         self.gridLayout.addWidget(self.titleLabel, 0, 0, 1, 2, Qt.AlignmentFlag.AlignCenter | Qt.AlignmentFlag.AlignTop)
 
-        print(type(list(self.reqInfo.keys())))
         keys = list(self.reqInfo.keys())
         for keyIndex in range(len(keys)):
             keyLabel = QLabel(keys[keyIndex])
@@ -80,6 +79,7 @@ class MWIWidget(QWidget):
 
         returnInfo["Product Name"] = self.regMan.queryValue("ProductName")[0]
         returnInfo["Current Build"] = self.regMan.queryValue("CurrentBuild")[0]
+        returnInfo["Product Id"] = self.regMan.queryValue("ProductId")[0]
         self.regMan.setAccessKey(r"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform")
         returnInfo["Product Key"] = self.regMan.queryValue("BackupProductKeyDefault")[0]
 
