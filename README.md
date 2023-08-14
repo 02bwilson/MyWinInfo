@@ -1,4 +1,5 @@
 # MyWinInfo
+[![MyWinInfo-build](https://github.com/02bwilson/MyWinInfo/actions/workflows/main.yml/badge.svg)](https://github.com/02bwilson/MyWinInfo/actions/workflows/main.yml)
 
 MyWinInfo is a Python program that utilizes the PyQt6 library and winreg module to display information about your Windows installation. It provides details such as the version and product key of your Windows operating system.
 
