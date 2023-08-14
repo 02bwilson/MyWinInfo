@@ -1,11 +1,11 @@
-from PyQt6.QtWidgets import QMainWindow
+from PyQt6.QtWidgets import QMainWindow, QApplication
 
 import qdarktheme
 
 from Widget import MWIWidget
 
 class MyWinInfo(QMainWindow):
-    _VERSION = "1.0.0"
+    _VERSION = "1.1.0"
 
     def __init__(self):
         """
@@ -30,3 +30,10 @@ class MyWinInfo(QMainWindow):
         self.setCentralWidget(self.widget)
 
 
+if __name__ == "__main__":
+    app = QApplication([])
+
+    window = MyWinInfo()
+    window.show()
+
+    app.exec()
