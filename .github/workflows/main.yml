@@ -29,4 +29,4 @@ jobs:
         pip install pyinstaller pyqt6 pyqtdarktheme
     - name: Create Executable
       run: |
-        pyinstaller --onefile --noconsole ./start.py
+        pyinstaller --onefile --noconsole ./MyWinInfo.py
