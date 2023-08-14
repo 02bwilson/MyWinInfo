@@ -17,7 +17,7 @@ Open a terminal or command prompt and navigate to the directory where you cloned
 
 Run the start script:
 
-`python start.py`
+`python MyWinInfo.py`
 
 The program will display a graphical user interface (GUI) window with information about your Windows installation.
 
